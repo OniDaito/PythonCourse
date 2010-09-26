@@ -1,0 +1,30 @@
+Python Course Code Ideas
+
+
+1) deliberate mistakes in each part
+2) super class and class - DONE
+3) mixins
+4) for loops - DONE
+5) Decorators - DONE (ish)
+6) Lambda Functions
+7) Dictionaries - DONE (ish)
+8) Lists - DONE (ish)
+9) class strings (__str__)
+10) sorting on lists? (maybe as an aside)
+11) Interactive mode (side by side as examples in the pacman code come in)
+12) advanced looping with each (and similar)
+13) Types?
+14) File IO
+15) Binary Operations?
+16) Lines like this:
+	sine_table = dict((x, sin(x*pi/180)) for x in range(0, 91))
+	unique_words = set(word  for line in page  for word in line.split())
+	valedictorian = max((student.gpa, student.name) for student in graduates)
+
+
+*) Examples codes for networking, opengl, hacking, django?
+*) Book listing?
+*) Website resources
+*) Python cheat sheets for me and the course!
+*) requirements - LiveCD? Probably not but definitely a list and a CD with things on
+*)
