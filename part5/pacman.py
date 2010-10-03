@@ -6,7 +6,7 @@ class Pacman():
 
 	# We can do this as part of initialisation, unlike other langauges
 	# Load an image from the disk
-	pacman_image = pyglet.resource.image('pacman.png')
+	pacman_image = pyglet.resource.image('images/pacman.png')
 
 	# Create one sprite from this
 	pacman_sprite = pyglet.sprite.Sprite(pacman_image)

@@ -6,38 +6,38 @@ import pyglet
 
 class Level():
 
-	# The corners of the maze
-#	grid_corner_top_left = pyglet.resource.image('grid_corner_top_left.png')
-#	grid_corner_top_right = pyglet.resource.image('grid_corner_top_right.png')
-#	grid_corner_bottom_left = pyglet.resource.image('grid_corner_bottom_left.png')
-#	grid_corner_bottom_right = pyglet.resource.image('grid_corner_bottom_right.png')
-
-	# The edges of the maze
-	
-#	grid_edge_left = pyglet.resource.image('grid_edge_left.png')
-#	grid_edge_right = pyglet.resource.image('grid_edge_right.png')
-#	grid_edge_top = pyglet.resource.image('grid_edge_top.png')
-#	grid_edge_bottom = pyglet.resource.image('grid_edge_bottom.png')
-	
 	grid = None
 	
 	def __init__(self):
+			
+		# The corners of the maze
+		grid_corner_top_left = pyglet.resource.image('images/grid_corner_top_left.png')
+		grid_corner_top_right = pyglet.resource.image('images/grid_corner_top_right.png')
+		grid_corner_bottom_left = pyglet.resource.image('images/grid_corner_bottom_left.png')
+		grid_corner_bottom_right = pyglet.resource.image('images/grid_corner_bottom_right.png')
 	
-		img = pyglet.resource.image('grid_texture.png') 
+		# The edges of the maze
+		
+		grid_edge_left = pyglet.resource.image('images/grid_edge_left.png')
+		grid_edge_right = pyglet.resource.image('images/grid_edge_right.png')
+		grid_edge_top = pyglet.resource.image('images/grid_edge_top.png')
+		grid_edge_bottom = pyglet.resource.image('images/grid_edge_bottom.png')
+
+		grid_blank = pyglet.resource.image('images/grid_blank.png')
 	
-		tl = Gs(img,False,True,False,True)
+		tl = Gs(grid_corner_top_left,False,True,False,True)
 		print tl
-		te = Gs(img,False,True,True,True)
-		tr = Gs(img,False,True,True,False)
+		te = Gs(grid_edge_top,False,True,True,True)
+		tr = Gs(grid_corner_top_right,False,True,True,False)
 		
-		le = Gs(img,True,True,False,True)
-		re = Gs(img,True,True,True,False)
+		le = Gs(grid_edge_left,True,True,False,True)
+		re = Gs(grid_edge_right,True,True,True,False)
 		
-		bl = Gs(img, True, False, False, True)
-		br = Gs(img, True, False, True, False)
-		be = Gs(img, True, False, True, True)
+		bl = Gs(grid_corner_bottom_left, True, False, False, True)
+		br = Gs(grid_corner_bottom_right, True, False, True, False)
+		be = Gs(grid_edge_bottom, True, False, True, True)
 		
-		a = Gs(img,True,True,True,True)
+		a = Gs(grid_blank,True,True,True,True)
 		
 		print a
 		
@@ -65,6 +65,6 @@ class Level():
 			for j in range (0,10):
 				gridsquare = self.grid[i][j]
 			
-				gridsquare.grid_sprite.x = i * 50
-				gridsquare.grid_sprite.y = j * 50
+				gridsquare.grid_sprite.y = 450  - (i * 50)
+				gridsquare.grid_sprite.x = j * 50
 				gridsquare.grid_sprite.draw()

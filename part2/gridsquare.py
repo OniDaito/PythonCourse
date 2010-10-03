@@ -2,13 +2,11 @@
 
 import pyglet
 
-# This class is really just a special kind of sprite that allows the pacman
-# to move one way or another. Normally, we'd just subclass sprite but the actual
-# class is a bit odd so we dont
+# This class is really just a special kind of sprite
 
 class GridSquare():	
 	
-	def __init__(self, img, allow_up, allow_down, allow_left, allow_right):
+	def __init__(self, img, allows_move):
 		
 		# This is a dictionary. Dictionaries allow us to map on value to another
 		move_permissions = {}
