@@ -4,14 +4,14 @@ Python Course Code Ideas
 REDO For Bomberman!
 
 1) deliberate mistakes in each part
-2) super class and class
+2) super class and class *
 3) mixins
 4) for loops
 5) Decorators
 6) Lambda Functions
 7) Dictionaries
-8) Lists
-9) class strings (__str__)
+8) Lists *
+9) class strings (__str__)	
 10) sorting on lists? (maybe as an aside)
 11) Interactive mode (side by side as examples in the pacman code come in)
 12) advanced looping with each (and similar)
@@ -24,6 +24,8 @@ REDO For Bomberman!
 	valedictorian = max((student.gpa, student.name) for student in graduates)
 
 17) Exceptions!
+18) slice s[i:j:k], min, max, sort, in, not in, pop, remove, count, len()
+19) strings as lists
 
 *) Examples codes for networking, opengl, hacking, django?
 *) Book listing?
@@ -33,6 +35,8 @@ REDO For Bomberman!
 *) REDO the permissions and game logic - Lookahead one square and just say whether
 or not we can move into it!
 
+http://docs.python.org/
+
 
 Code layout plan:
 
@@ -40,7 +44,16 @@ Code layout plan:
 	- Potentially paste each line into the interpreter and run __str__, dir() etc
 	- make menton of the co-ordinate system at this point
 
-2) Creation of a grid - basic class structure and more imports (import from)
+2) Creation of a grid - basic class structure
 	- __doc__ string show
 	
-3) Creation of grid - loop structures
+3) Creation of grid - loop structures (pythonic and otherwise?)
+	- from import as *
+	- for / each looping and range looping
+	
+4) Keyboard interaction and game logic
+	- Keyboard bits first.
+	- int() function and // (floor)
+	
+5) Reading a level from a file
+	- File IO
