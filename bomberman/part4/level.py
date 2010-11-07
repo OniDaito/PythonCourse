@@ -37,10 +37,8 @@ class Level():
 		
 		We need to convert x and y into block indexes with a little maths.'''
 		
-		column = int(xpos) / 30 # This converts xpos to an integer then divides
-		row = ypos // 30 # this does a float division then *floors* the result
+		''' FOR YOU: given an x and y in coordinate space, convert into 
+			columns and rows and return true or false if bomberman can move there'''
 		
-		print column, row # Print it out, just to make sure!
 		
-		return self.grid[row][column].allows_movement
 		

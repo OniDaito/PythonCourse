@@ -12,7 +12,8 @@ class GridSquare():
 	# grid and whether or not bomberman can move into this spot
 	
 	def __init__(self, allows_movement):
-		self.allows_movement = allows_movement
+		
+		''' FOR YOU - set the allows movement to what it should be '''
 		
 	
 	def draw(self):
@@ -46,19 +47,10 @@ class BlankSquare(GridSquare):
 
 class StoneSquare(GridSquare):
 	''' A Square that doesnt allow movement and appears like stone'''
-	def __init__(self, xpos, ypos):
-		GridSquare.__init__(self,False)
-		self.img = pyglet.resource.image('images/stone_block.png')
-		self.sprite = pyglet.sprite.Sprite(self.img)
-		self.sprite.x = xpos
-		self.sprite.y = ypos
-
+	
+	''' FOR YOU: Implement the Stone Square'''
 
 class BrickSquare(GridSquare):
 	''' A Square that can be destroyed by a bomb '''
-	def __init__(self, xpos, ypos):
-		GridSquare.__init__(self,False)
-		self.img = pyglet.resource.image('images/brick_block.png')
-		self.sprite = pyglet.sprite.Sprite(self.img)
-		self.sprite.x = xpos
-		self.sprite.y = ypos
+	
+	''' FOR YOU: Implement the Brick Square '''

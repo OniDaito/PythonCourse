@@ -13,11 +13,10 @@ class Level():
 	def __init__(self):
 	
 		# First thing we do is create a basic looking level of blanks
-		for i in range(0,self.grid_height):
-			self.grid.append([])	# Create a new empty list
-			for j in range(0,self.grid_width):
-				self.grid[i].append(
-				BlankSquare(j * self.block_size, i * self.block_size))
+		
+		''' FOR YOU: For each row, create an array and then, for each column, 
+			add a new Blank Square to that array '''
+		
 				
 		
 	def draw(self):

@@ -6,26 +6,36 @@ REDO For Bomberman!
 1) deliberate mistakes in each part
 2) super class and class *
 3) mixins
-4) for loops
+4) for loops *
 5) Decorators
-6) Lambda Functions
-7) Dictionaries
+6) Lambda Functions - http://www.secnetix.de/olli/Python/lambda_functions.hawk
+7) Dictionaries *
 8) Lists *
 9) class strings (__str__)	
 10) sorting on lists? (maybe as an aside)
 11) Interactive mode (side by side as examples in the pacman code come in)
 12) advanced looping with each (and similar)
-13) Types?
-14) File IO
+13) Types?!!
+14) File IO *
 15) Binary Operations?
 16) Lines like this:
 	sine_table = dict((x, sin(x*pi/180)) for x in range(0, 91))
 	unique_words = set(word  for line in page  for word in line.split())
 	valedictorian = max((student.gpa, student.name) for student in graduates)
 
-17) Exceptions!
+17) Exceptions! *
 18) slice s[i:j:k], min, max, sort, in, not in, pop, remove, count, len()
 19) strings as lists
+20) __base__ ?
+21) Class dictionaries and similar?
+22) tuples *
+23) yield? - Generators
+24) threads?
+25) if __name__ == "__main__": *
+26) pickling?
+27) pycap, scapy? Jonty's Idiocy, UA Tester, Pyrit
+28) urllib lxml parser
+29) easy_install demo (also python setup.py install)
 
 *) Examples codes for networking, opengl, hacking, django?
 *) Book listing?
@@ -34,15 +44,20 @@ REDO For Bomberman!
 *) requirements - LiveCD? Probably not but definitely a list and a CD with things on
 *) REDO the permissions and game logic - Lookahead one square and just say whether
 or not we can move into it!
-
-http://docs.python.org/
-
+*) for x in a[:]: # make a slice copy of the entire list if len(x) > 6: a.insert(0, x)
+*) !! python -h (then python -v) (we can see the pyglet then)
+*) __init__ method in a dir? what was that for?	
+*) PYTHONPATH
+*) sum, filter, reduce, map
 
 Code layout plan:
 
 1) Basic intro - print statement, function, includes, basic decorator, instantiation
 	- Potentially paste each line into the interpreter and run __str__, dir() etc
 	- make menton of the co-ordinate system at this point
+	- help(???)
+	- str()
+	- dir()
 
 2) Creation of a grid - basic class structure
 	- __doc__ string show
@@ -50,6 +65,8 @@ Code layout plan:
 3) Creation of grid - loop structures (pythonic and otherwise?)
 	- from import as *
 	- for / each looping and range looping
+	- Within a module, the module’s name (as a string) is available as the value of the global 
+		variable __name__.
 	
 4) Keyboard interaction and game logic
 	- Keyboard bits first.
@@ -57,3 +74,28 @@ Code layout plan:
 	
 5) Reading a level from a file
 	- File IO
+	- do just add blanks first
+	- multiple if statements (add once we have created a block of blanks)
+	- reverse on a list
+	
+6) Making a Bomberman class
+	- Dictionaries (for each sprite)
+	- exceptions (Make a typo in the sprite loading, show, then add exceptions)
+		- point out its a class and needs to be imported
+		- show exit and pass
+		- show basic except: first
+		- TODO - ADD A RAISE!!! 
+
+7) Animate bomberman character
+	- tuples for each frame? - NOT Editable remember?
+	- Mention tuple unpacking and packing
+	- sys module? Command line for levels?
+	- if __name__ == "__main__"
+	
+8) Decorators and function wrapping passing
+	- for the bombs?
+	- add a function in level to return 2 arguments!
+	- yield function for animation - show the fib.py
+	
+
+	

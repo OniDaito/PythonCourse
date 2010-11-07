@@ -18,22 +18,28 @@ class Level():
 		if level_file:
 			f = open(level_file, 'r') # can be w,r, r+ or a
 			
-			# lets create our grid first
-			for i in range(0,self.grid_height):
-				self.grid.append([])
+			current_row = self.grid_height
 			
-			current_row = grid_height
+			xpos = 0
+			ypos = self.grid_height - 1
 			
 			for line in f:
 				''' Each line is a row in our grid but remember that with 
 				lists and arrays, 0,0 is the top left whereas in our actual
 				game, 0,0 is the bottom left'''
 				
-				for block in line:
-					self.grid[current_row].append( )
 				
-				current_row--
+				''' FOR YOU - for each line, append a new list to the grid
+					then read each character on the line and append a different
+					kind of block to each row depending on what we have read.
+					
+					Each time, we need to increment the real position as well '''
 				
+				
+				
+			# Add in a reverse to get the level the right way
+			# But remember, we need to adjust the ypos too!
+			self.grid.reverse()
 	
 		else:		
 			for i in range(0,self.grid_height):

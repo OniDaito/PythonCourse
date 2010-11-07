@@ -1,0 +1,387 @@
+.. style::
+   :layout.valign: center
+   :align: center
+   :font_size: 64
+   
+**Hackspace Python Course**
+
+----
+
+.. style:: :align: left
+	:font_size: 32
+
+----
+
+.. style:: :align: left :layout.valign: center
+- Talking a bit covering some new Python
+- Playing with this in the interactive console
+- Using it to play Bomberman
+
+
+ .. layout::
+   image: python-logo.gif;halign=right;valign=bottom
+   image: london.png;halign=left;valign=top 
+
+
+----
+
+.. style:: :italic: no
+	:align: left
+	:font_size: 32
+
+You will need
+
+ - A Laptop
+ - Python 2.5 , 2.6 or 2.7 - **http://www.python.org/**
+ - Pyglet - **http://www.pyglet.org/**
+ - Windows, Linux or Mac OSX 
+ - A Good Text Editor
+ 
+ 
+
+
+----
+
+.. style:: :italic: no
+	:align: left
+	:font_size: 32
+
+A Little about Python
+
+ - An interpreted Scripting Language
+ - Used all over the place - NASA, Civilization 4, Evil Hackers...
+ - Schism between branch version 2.x and 3.x
+ - Lots and lots of Libraries (written mostly in C/C++)
+ 
+ .. style:: :italic: yes
+	:align: right
+	:font_size: 18
+
+ no-one expects the spanish inquistion!
+ 
+ 
+----
+
+.. style:: :italic: no
+	:align: left
+	:font_size: 32
+
+
+The Good
+
+ - Easy to learn and quick to get things done
+ - Runs on many platforms
+ - Many libraries (at least for 2.x branch)
+ - Interactive mode
+ - Weakly typed (ish)
+ - dynamic typing
+ 
+The Bad
+
+ - **Whitespace!!!!!!**
+ - Interpreted can be slower
+ - for / else (confusing syntax example)
+ - dynamic typing
+ 
+ 
+----
+
+ .. style:: 
+	:align: center
+
+ .. image:: xkcd_python.png
+ 
+ 
+----
+
+**Resources**
+
+
+----
+
+.. style:: :italic: no
+	:align: left
+	:font_size: 32
+
+**Running Python Interactive**
+ *python* or *python2.5*
+
+**Helloworld**
+ print "hello world!"
+ 
+
+----
+
+.. style:: :italic: no
+	:align: left
+	:font_size: 32
+
+**Functions**
+
+def *functionname* (*parameters*) :
+
+**comments**
+
+*#*, or two lots of *''' '''*
+
+**including extra things**
+
+import *name of thing*
+
+**decorator statement**
+
+@functionname
+ 
+ 
+----
+
+.. style:: :italic: no
+	:align: left
+	:font_size: 32
+
+**What are all these names and dots?**
+
+use the commands *dir*, *str* and *help*
+
+
+----
+
+.. style:: :italic: no
+	:align: left
+	:font_size: 32
+
+**Now it's your turn - part1.py**
+
+- Look for the comment blocks that start with **FOR YOU**
+ 
+ 
+----
+
+.. style:: :italic: no
+	:align: left
+	:font_size: 32
+
+**Basic Classes**
+
+class *name* ( *superclass*):
+ ...
+ 
+ def *functionname* (self, *params*):
+  ...		
+
+----
+
+**part2.py**
+
+- Finish off the square.py classes that represent each block
+ 
+----
+
+.. style:: :italic: no
+	:align: left
+	:font_size: 32
+
+**Looping**
+
+using *while*, *for*
+ but theres lots you can do with for
+  *for letter in word*
+  
+**importing things**
+
+using *import* with the filename minus the py.
+ - *import grid*
+ - imports match the directory and name 
+ - can do *from x import y*
+ - can also do *from x import y as z*
+
+----
+
+**part3.py**
+
+- Create a level of blank blocks
+- create a class function that loops over that, drawing the blocks
+- Import and instantiate the level
+
+----
+
+**Types**
+
+They do exist in Python but under the hood. 
+ *int()*
+
+We can check with 
+ *type()*
+ 
+We do have special operators (bitwise etc)
+ *//* is handy - it auto-floors!
+  
+**importing things**
+
+using *import* with the filename minus the py.
+ - *import grid*
+ - imports match the directory and name 
+ 
+----
+
+**part4.py**
+
+canMoveHere function needs some float/int conversion
+
+----
+
+**File I/O**
+
+ f = open("filename", 'r') # can be w,r, r+ or a
+ 
+ once we have a file object we can do things like this
+  - *for line in f*
+  - *for character in line*
+ writing to files is easy too
+  - *f.write("string")*
+  - Dont forget the "\\n" if you want lines (also string.strip() might help when reading in lines)
+  
+  
+----
+
+**part5.py**
+
+level.py needs some file loading action
+
+----
+
+**Dictionaries and lists**
+
+ Very powerful aspect of python - lists
+  - *mylist = []*
+  - *mylist.append(1)*
+ 
+ Dictionaries are fun too!
+  - *mydict = {}*
+  - *mydict["jam"] = toast()*
+  
+ Many MANY functions for playing with these:
+  - *sort, slice, strip, append, in, reverse* etc
+ 
+----
+
+**Exceptions**
+
+ Similar to other languages
+  try:
+   ...
+  except IOError as (errno, strerror):
+   print errnom strerror
+  except ValueError:
+   ...
+  except:
+   ...
+  finally:
+   ...
+ 
+----
+
+**More Exceptions**
+
+ try:
+  raise Exception('spam', 'eggs')
+ except Exception as inst:
+  ...
+----
+
+**part6.py**
+
+- We need to add some exceptions for our bomberman class
+- Need to add some more sprites using dictionaries
+
+
+----
+
+**Tuples**
+
+ - *x = (1,2,3,4)*
+ - *a,b,c,d = x*
+ 
+ Useful for returning multiple things, packing and unpacking
+ 
+----
+
+**SYS Module**
+
+A good example of a module
+ import sys
+
+- sys.argv[0] is the program name
+- sys.argv[1] is the first argument
+
+----
+
+**if __name__ == "__main__"**
+
+ - *__name__* is a special variable (there are many hidden varibles, remember dir()?)
+ - This is useful if we want to import our code inside OTHER programs later on
+ - Imagine if part6.py needed to be imported using *import part6*
+
+----
+
+**part7.py**
+
+ - Use the __name__ == "__main__" trick
+ - Load the level from a command line parameter
+ - refactor bomberman.py to use a set of tuples for each animation	
+ 
+----
+
+**functions as first class citizens**
+
+ - We can throw functions around however we like, even change class functions on the fly
+ - *print sprite.draw*
+ - *x = sprite.draw*
+ - *x()*
+ 
+----
+
+**decorators**
+
+ - Remeber the @window.event
+ - We can wrap a function within another function
+ *def makebold(fn):*
+  *def wrapped():*
+   *return "<b>" + fn() + "</b>"*
+  *return wrapped*
+  
+----
+
+**generators**
+
+ - use of the **yield** keyword
+ - this stops a function temporarily and returns a value
+ - consider the fib.py example
+ 
+----
+
+**part8.py**
+
+ - First, when the user presses space, lets overwrite the draw function of that square to leave a bomb
+ - Secondly, we can write another, similar function to generate a new function to do some animation
+
+----
+
+**And now for something completely different**
+
+----
+
+.. style:: :italic: no
+	:align: left
+	:font_size: 26
+
+**We can either** 
+ - go home
+ - work on our bomberman game in a workshop style
+ - cover some more specific topics - **your choice**
+  - **Django** - Python's Ruby on Rails
+  - **PySerial** - interfacing with serial devices
+  - **Weaponizing Python** - Doing naughty things (pyrit, pyflite, uatester, idiocy)
+  - **PyGame / PyOpenGL / Pyglet** - More gaming stuffs!
+  - **General use Python** - My moveflat html parser
+  - **easy_install, dist_utils etc** - installing extra python!

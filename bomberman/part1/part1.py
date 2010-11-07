@@ -31,8 +31,11 @@ def on_draw():
 	
 # Update our game state
 def update(dt): 
-	# Move 10 pixels per second 
-	bomberman_sprite.x += dt * 10
+	''' FOR YOU: Try to get the bomberman sprite to move every time 
+	update is called. dt is a number (delta time) and sprite has a member
+	variable called x and another called y'''
+	
+	pass
 	
 	
 # Call the update mathod repeatedly 	

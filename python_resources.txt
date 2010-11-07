@@ -1,0 +1,6 @@
+Python Resources
+
+http://wiki.python.org/moin/BeginnersGuide/NonProgrammers
+http://docs.python.org/release/2.6.6/
+http://docs.python.org/py3k/
+http://docs.python.org/
