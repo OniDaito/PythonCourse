@@ -20,25 +20,25 @@ bomberman_sprite = pyglet.sprite.Sprite(bomberman_image)
 # Something that occurs when the A button is pressed
 @window.event
 def on_key_press(symbol, modifiers):
-	print 'A key was pressed'
+  print 'A key was pressed'
 
 
 # When the window is drawn, do stuff
 @window.event 
 def on_draw():
-	window.clear()
-	bomberman_sprite.draw()	
-	
+  window.clear()
+  bomberman_sprite.draw() 
+  
 # Update our game state
 def update(dt): 
-	''' FOR YOU: Try to get the bomberman sprite to move every time 
-	update is called. dt is a number (delta time) and sprite has a member
-	variable called x and another called y'''
-	
-	pass
-	
-	
-# Call the update mathod repeatedly 	
+  ''' FOR YOU: Try to get the bomberman sprite to move every time 
+  update is called. dt is a number (delta time) and sprite has a member
+  variable called x and another called y'''
+  
+  pass
+  
+  
+# Call the update mathod repeatedly   
 pyglet.clock.schedule_interval(update, 1/60.)
 
 # Finally, run the app

@@ -36,7 +36,21 @@ You will need
  - Pyglet - **http://www.pyglet.org/**
  - Windows, Linux or Mac OSX 
  - A Good Text Editor
+ - All on the London Hackspace Wiki
  
+ 
+----
+
+.. style:: :italic: no
+	:align: left
+	:font_size: 32
+ 
+**Disclaimer**
+
+- Not sure of Skill levels at all
+- If its too fast, dont worry, we'll slow it down later
+- If its too slow, dont worry, we'll speed it up later!
+- We'll re-cover aspects if needed.
  
 
 

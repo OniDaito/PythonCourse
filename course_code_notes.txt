@@ -11,7 +11,7 @@ REDO For Bomberman!
 6) Lambda Functions - http://www.secnetix.de/olli/Python/lambda_functions.hawk
 7) Dictionaries *
 8) Lists *
-9) class strings (__str__)	
+9) class strings (__str__)	*
 10) sorting on lists? (maybe as an aside)
 11) Interactive mode (side by side as examples in the pacman code come in)
 12) advanced looping with each (and similar)
@@ -29,10 +29,10 @@ REDO For Bomberman!
 20) __base__ ?
 21) Class dictionaries and similar?
 22) tuples *
-23) yield? - Generators
+23) yield? - Generators *
 24) threads?
 25) if __name__ == "__main__": *
-26) pickling?
+26) pickling? *
 27) pycap, scapy? Jonty's Idiocy, UA Tester, Pyrit
 28) urllib lxml parser
 29) easy_install demo (also python setup.py install)
@@ -49,6 +49,7 @@ or not we can move into it!
 *) __init__ method in a dir? what was that for?	
 *) PYTHONPATH
 *) sum, filter, reduce, map
+*) List comprehensions -> [(x, x**2) for x in vec] - Generatate a list :)
 
 Code layout plan:
 

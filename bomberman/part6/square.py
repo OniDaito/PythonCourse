@@ -39,7 +39,7 @@ class BlankSquare(GridSquare):
 	def __init__(self, xpos, ypos):
 		GridSquare.__init__(self,True)
 		self.img = pyglet.resource.image('images/blank_block.png')
-		self.sprite = pyglet.sprite.Sprite(self.img)
+    self.sprite = pyglet.sprite.Sprite(self.img)
 		self.sprite.x = xpos
 		self.sprite.y = ypos
 

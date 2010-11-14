@@ -28,31 +28,31 @@ level1 = lvl()
 # When the window is drawn, do stuff
 @window.event 
 def on_draw():
-	window.clear()		
-	level1.draw()
-	bomberman_sprite.draw()	
-	
+  window.clear()    
+  level1.draw()
+  bomberman_sprite.draw() 
+  
 # Update our game state
 def update(dt): 
-	
-	if keys[key.LEFT]:
-		if level1.canMoveHere(bomberman_sprite.x - 5, bomberman_sprite.y):
-			bomberman_sprite.x -= 5
-		
-	if keys[key.RIGHT]:
-		if level1.canMoveHere(bomberman_sprite.x + 5, bomberman_sprite.y):
-			bomberman_sprite.x += 5
-	
-	if keys[key.UP]:
-		if level1.canMoveHere(bomberman_sprite.x, bomberman_sprite.y + 5):
-			bomberman_sprite.y += 5
-		
-	if keys[key.DOWN]:
-		if level1.canMoveHere(bomberman_sprite.x, bomberman_sprite.y - 5):
-			bomberman_sprite.y -= 5
-	
-	
-# Call the update mathod repeatedly 	
+  
+  if keys[key.LEFT]:
+    if level1.canMoveHere(bomberman_sprite.x - 5, bomberman_sprite.y):
+      bomberman_sprite.x -= 5
+    
+  if keys[key.RIGHT]:
+    if level1.canMoveHere(bomberman_sprite.x + 5, bomberman_sprite.y):
+      bomberman_sprite.x += 5
+  
+  if keys[key.UP]:
+    if level1.canMoveHere(bomberman_sprite.x, bomberman_sprite.y + 5):
+      bomberman_sprite.y += 5
+    
+  if keys[key.DOWN]:
+    if level1.canMoveHere(bomberman_sprite.x, bomberman_sprite.y - 5):
+      bomberman_sprite.y -= 5
+  
+  
+# Call the update mathod repeatedly   
 pyglet.clock.schedule_interval(update, 1/60.)
 
 # Finally, run the app
