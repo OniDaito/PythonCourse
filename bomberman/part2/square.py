@@ -26,7 +26,7 @@ class EdgeSquare(GridSquare):
   
   def __init__(self, xpos, ypos):
     GridSquare.__init__(self,False)
-    self.img = pyglet.resource.image('images/edge_block.png')
+    self.img = pyglet.resource.image('edge_block.png')
     self.sprite = pyglet.sprite.Sprite(self.img)
     self.sprite.x = xpos
     self.sprite.y = ypos

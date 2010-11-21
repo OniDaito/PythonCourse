@@ -78,7 +78,7 @@ A Little about Python
 
 .. style:: :italic: no
 	:align: left
-	:font_size: 32
+	:font_size: 26
 
 
 The Good
@@ -108,7 +108,18 @@ The Bad
  
 ----
 
+.. style:: :italic: no
+	:align: left
+	:font_size: 24
+
 **Resources**
+
+ - http://wiki.python.org/moin/BeginnersGuide/NonProgrammers
+ - http://docs.python.org/release/2.6.6/
+ - http://docs.python.org/py3k/
+ - http://docs.python.org/
+ - Learning Python the Hard Way - http://sheddingbikes.com/posts/1285754959.html
+ - http://www.pyglet.org/doc/programming_guide/index.html
 
 
 ----
@@ -195,12 +206,34 @@ class *name* ( *superclass*):
 	:align: left
 	:font_size: 32
 
+
+**Lists**
+
+ Very powerful aspect of python - lists
+  - *mylist = []*
+  - *mylist.append(1)*
+ 
+  Many MANY functions for playing with these:
+  - *sort, slice, strip, append, in, reverse* etc
+
+ 
+ 
+ 
+----
+
+.. style:: :italic: no
+	:align: left
+	:font_size: 32
+
 **Looping**
 
 using *while*, *for*
  but theres lots you can do with for
   *for letter in word*
   
+  
+----
+
 **importing things**
 
 using *import* with the filename minus the py.
@@ -208,6 +241,7 @@ using *import* with the filename minus the py.
  - imports match the directory and name 
  - can do *from x import y*
  - can also do *from x import y as z*
+ 
 
 ----
 
@@ -230,12 +264,6 @@ We can check with
 We do have special operators (bitwise etc)
  *//* is handy - it auto-floors!
   
-**importing things**
-
-using *import* with the filename minus the py.
- - *import grid*
- - imports match the directory and name 
- 
 ----
 
 **part4.py**
@@ -264,20 +292,19 @@ level.py needs some file loading action
 
 ----
 
-**Dictionaries and lists**
+**Dictionaries**
 
- Very powerful aspect of python - lists
-  - *mylist = []*
-  - *mylist.append(1)*
- 
- Dictionaries are fun too!
+ Dictionaries are fun !
   - *mydict = {}*
   - *mydict["jam"] = toast()*
   
- Many MANY functions for playing with these:
-  - *sort, slice, strip, append, in, reverse* etc
+
  
 ----
+
+.. style:: :italic: no
+	:align: left
+	:font_size: 26
 
 **Exceptions**
 
@@ -317,6 +344,8 @@ level.py needs some file loading action
  - *a,b,c,d = x*
  
  Useful for returning multiple things, packing and unpacking
+ 
+ - Some handy functions like *zip*
  
 ----
 
@@ -382,6 +411,29 @@ A good example of a module
 ----
 
 **And now for something completely different**
+
+----
+
+.. style:: :italic: no
+	:align: left
+	:font_size: 22
+	
+**Things we HAVENT covered**
+
+ - PDB
+ - OS Module (and many others)
+ - Threads
+ - Extreme List comprehensions
+ - SWIG
+ - Really REALLY delved into the standard libs
+ - Crypto
+ - Regular expressions
+ - Lambda functions
+ - Old / New classes
+ - and much much more!
+ 
+ - and thats before all the other libraries available!
+ 
 
 ----
 

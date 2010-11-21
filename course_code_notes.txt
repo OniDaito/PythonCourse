@@ -50,6 +50,8 @@ or not we can move into it!
 *) PYTHONPATH
 *) sum, filter, reduce, map
 *) List comprehensions -> [(x, x**2) for x in vec] - Generatate a list :)
+*) print 'We are the {} who say "{}!"'.format('knights', 'Ni')
+*) print '{0:2d} {1:3d} {2:4d}'.format(x, x*x, x*x*x)
 
 Code layout plan:
 

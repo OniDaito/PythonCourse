@@ -1,5 +1,8 @@
 import pyglet
 
+pyglet.resource.path=['images']
+pyglet.resource.reindex()
+
 ''' A simple version of bomberman. Each tile is 30x30 so we can 
 make a grid with various blocks that bomber can/can't move
 through or destroy/not destroy. We use the Pyglet Library 
@@ -12,7 +15,7 @@ window = pyglet.window.Window(600,600)
 
 
 # Load an image from the disk
-bomberman_image = pyglet.resource.image('images/bomberman_down_1.png')
+bomberman_image = pyglet.resource.image('bomberman_down_1.png')
 
 # Create one sprite from this
 bomberman_sprite = pyglet.sprite.Sprite(bomberman_image)

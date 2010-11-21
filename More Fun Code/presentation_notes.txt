@@ -1,0 +1,122 @@
+*** Talk Notes Per Slide ***
+
+- First slide show final bomberman
+
+- Disclaimer
+	- First time we've covered
+	- mention cost (donations etc)
+	
+
+- A little about Python
+	- 
+
+- Good / Bad
+	- Mention 32/64bit issues (libraries)
+	- different versions (python 2.7 as a lead to 3)
+	- Whitespace in depth
+
+- Resources
+	- O Rly Python Cookbook mention?
+
+- Running Python
+	- python -c and python -v as well
+	- show how to exit as well
+
+- Functions
+	- Show part1.py
+	- Show bits of part 1 in the interactive bit (gives them a clue)
+	
+- What are all these...
+	- mention repr() as well
+	
+- Now its your Turn
+	- Show the bit we need to play with. 
+	
+- Basic Classes
+	- 
+	
+- Part2.py
+	-
+
+- Lists
+	- Show list comprehensions [ x*2 for x in l ]
+	- reverse, slice
+	- show two dimensional arrays
+	
+- Looping
+	- Show range (creates a list, classic for loop)
+	- Strings as lists
+	- Bring in Matt and his stuff
+	
+- Importing things
+	- __init__.py blank mention?
+	- example: from os import getcwd. from os import getcwd as gc
+		- show the difference. Do just import os as well
+
+- part3
+	-
+
+- Types
+	-
+	
+- part4
+	-
+	
+- File I/O
+	- Binary data is also possible - (seek and read)
+	- readline, readlines, read
+	- remember to CLOSE files  - can use 'with open() as f:' to do this automatically
+	
+- Part5
+	-
+
+- Dictionaries
+	- 
+	
+- Exceptions
+	-
+	
+- Part6
+	-
+
+- Tuples
+	- show x,y = y,x
+	- mention they are fixed!
+	- show a list of tuples and unpacking them when looping over
+		- l = [(1,2),(3,4)]
+		- for x,y in l
+			x + y
+	- zip
+		- a = [1,2,3]
+		- b = [3,4,5]
+		- zip(a,b)
+	
+- Sys module
+	- 
+
+- if __name__ == "__main__":
+	- Essentially, classic classes are dictionaries. 
+	- Modules have dictionaries and names too
+	- try and import part2.py. Show what happens. Then show it again with this
+	
+- part7.py
+	-
+	
+- Funtions as first class citizens
+	-
+	
+- Decorators
+	-
+
+- Generators
+	- small, internal loops that pause to return things
+
+- part8
+	-
+	
+- Things we havent covered
+ -
+
+- We can...
+ -
+	
