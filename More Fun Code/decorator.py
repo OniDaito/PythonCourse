@@ -1,10 +1,10 @@
 def test(f):
-	print "aha"
+	print ("aha")
 	return f
 
 @test
 def flibble():
-	print "flibble"
+	print ("flibble")
 	
 if __name__ == "__main__":
 	flibble()

@@ -23,7 +23,7 @@ class Bomberman():
 		except (RuntimeError, TypeError, NameError):
 			pass
 		except ResourceNotFoundException:
-			print "You made a typo!"
+			print ("You made a typo!")
 			exit()
 	
 		self.sprites["left"] = pyglet.sprite.Sprite(left_img)

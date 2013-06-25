@@ -84,12 +84,12 @@ class Level():
 		column = int(xpos) / 30 # This converts xpos to an integer then divides
 		row = ypos // 30 # this does a float division then *floors* the result
 		
-		print column, row # Print it out, just to make sure!
+		print (column, row) # Print it out, just to make sure!
 		
 		return self.grid[row][column].allows_movement
 		
 	def gridLocation(self, xpos, ypos):
-		column = int(xpos) / 30
+		column = xpos // 30
 		row = ypos // 30
 		
 		return column, row

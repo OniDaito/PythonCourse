@@ -8,4 +8,4 @@ def fib():
 f = fib()
 
 for i in range(0,10):
-	print f.next()
+	print (f.next())

@@ -20,7 +20,7 @@ bomberman_sprite = pyglet.sprite.Sprite(bomberman_image)
 # Something that occurs when the A button is pressed
 @window.event
 def on_key_press(symbol, modifiers):
-	print 'A key was pressed'
+	print ('A key was pressed')
 
 
 # When the window is drawn, do stuff

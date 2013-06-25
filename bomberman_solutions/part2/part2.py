@@ -22,7 +22,7 @@ es = square.EdgeSquare(20,20)
 # Something that occurs when the A button is pressed
 @window.event
 def on_key_press(symbol, modifiers):
-	print 'A key was pressed'
+	print ('A key was pressed')
 
 
 # When the window is drawn, do stuff
