@@ -16,7 +16,7 @@ There are some things you'll need for the course before you start. Of couse, if 
   
 ## Windows
 
-* Python 3- http://www.python.org/download/releases/2.6.6/ This version works well with lots of libraries (though you may wish to consider 2.7 if you are learning yourself)
+* Python 3- http://www.python.org/download/releases/3.3.2/#download select the appropriate version for the processor 'Python 3.3.2 Windows x86 MSI Installer' for Intel, 'Windows X86-64 MSI Installer' for AMD64 processors.  
   	
 * Notepad ++ - http://notepad-plus-plus.org/ This is a great editor under windows and works pretty well.
   		
